@@ -20,7 +20,7 @@ class LendingHandler
     ) {
     }
 
-    public function handle(LendingEntryDto $entryDto)
+    public function handle(LendingEntryDto $entryDto): array
     {
         $this->clientService->register(
             $entryDto->getFirstname(),

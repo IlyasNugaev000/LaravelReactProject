@@ -28,7 +28,6 @@ export default class Lending extends React.Component{
                                     <h4>Доступные банки</h4>
                                 </div>
                                 <div className="card-body">
-
                                     <table className="table table-bordered table-striped">
                                         <thead>
                                         <tr className="text-center">

@@ -17,12 +17,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::post('/lending',[LendingController::class, 'lending'])->name('lending');
-    //return response()->json([ 'status' => 200, 'message' => "EEEE Backend is work!" ]);
-    //return response()->api(['status' => 200, $request->all()]);
-
-

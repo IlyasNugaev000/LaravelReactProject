@@ -88,7 +88,6 @@ export default function MainForm() {
         }
 
         axios.post(`/api/lending`, data).then(res => {
-            console.log(res.status);
             if(res.status === 200)
             {
                 history.push({
