@@ -15,16 +15,16 @@ class LendingFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'surname' => 'required|string',
-            'firstname' => 'required|string',
-            'patronymic' => 'required|string',
+            'surname' => 'required|string|max:255',
+            'firstname' => 'required|string|max:255',
+            'patronymic' => 'required|string|max:255',
             'birthday' => 'required|date_format:Y-m-d',
             'employment' => 'required|bool',
             'amount' => 'required|int',
             'period' => 'required|int',
             'citizen' => 'required|bool',
             'phone' => 'required|regex:/\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}/u',
-            'email' => 'required|email',
+            'email' => 'required|email|max:255',
         ];
     }
 }
